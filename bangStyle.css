@@ -1,0 +1,155 @@
+.all{
+    background-color: black;
+}
+.body{
+    margin:0px;
+    font-family:"微軟正黑體","新細明體";
+}
+.header{
+
+    font-size: 40px;color:white;
+    font-weight:bold;
+    text-align: center;
+    background-color: #0f2438;
+    padding:25px 0px;/*前面上下單位 後者左右單位*/
+}
+/* CSS Media Query*/
+@media (max-width:500px)
+{
+    .header{
+        font-size: 30px;
+        padding:15px 0px;
+    }
+}
+.nav{
+    font-size:36px;color: aqua;
+    text-align: center;
+    padding:10px 0px;
+}
+/*階層式選擇器*/
+.nav>.item{
+    padding:50px;
+    cursor: pointer;
+}
+.nav>.item:hover{
+    color:red;
+    /*background-color: #dddddd;*/
+}
+@media (max-width:500px)
+{
+    .nav{
+        white-space: nowrap;
+        overflow-x:auto;
+        font-size: 20px;
+    }
+    .nav>.item{
+        padding:8px;
+        cursor: pointer;
+    }
+    /*.nav{
+        font-size: 20px;
+    }
+    .nav>.item{
+        padding: 15px 10px;
+    }*/
+}
+.visual{
+    height: 450px;line-height: 450px;
+    background-image: url("bang_p4.jpg");
+    background-position: left bottom;
+    background-size:cover; 
+    
+    font-weight:bold;
+    font-size: 80px;
+    text-align: center;
+    color: #FFA488;
+    -webkit-text-stroke: 3px #FFCC22;
+    /*text-shadow: 0px 0px 15px #E63F00;/*X軸移動 Y軸移動 暈開效果 光暈顏色*/
+    text-shadow: 0 0 20px #fdec84,
+            10px 5px 30px #ffae35,
+            20px 10px 40px #ec760c,
+            -20px 40px 50px #cd4607,
+            0px 60px 60px #973717,
+            10px 20px 70px #451b0e;
+}
+@media (max-width:500px)
+{
+    .visual{
+        height: 250px;line-height: 250px;
+        background-image: url("bang_p4.jpg");
+        background-position: center bottom;
+        background-size:cover; 
+        
+        font-weight:bold;
+        font-size: 30px;
+        text-align: center;
+        color: #FFA488;
+        -webkit-text-stroke: 0.3px #FFCC22;
+        /*text-shadow: 0px 0px 15px #E63F00;/*X軸移動 Y軸移動 暈開效果 光暈顏色*/
+        text-shadow: 0 0 20px #fdec84,
+                10px 5px 30px #ffae35,
+                20px 10px 40px #ec760c,
+                -20px 40px 50px #cd4607,
+                0px 60px 60px #973717,
+                10px 20px 70px #451b0e;
+    }
+}
+.content{
+    display: flex;/*並排*/
+    justify-content: center;
+    padding:50px 0px;
+}
+.content>.left{
+    text-align: center;
+    width: 500px;
+}
+.content>.right{
+    text-align: left;
+    width: 600px;
+    font-size: 30px;color: #FF7744;
+}
+.content>.left>.head{
+    width: 400PX;height: 400px;
+    border-radius: 50%;
+}
+.content>.right>.title{
+    font-size:36px;
+    font-weight:bold;
+}
+@media(max-width:500px){
+    .content{
+       flex-wrap: wrap;/*讓flexbox 中的區塊可以望下掉*/
+    }
+    .content>.left{
+        width: 95%;
+    }
+    .content>.right{
+        padding:10px 0px;
+        width: 95%;
+        font-size: 20px;
+        color: #FF7744;
+        text-align: center;
+    }
+    .content>.left>.head{
+        width: 200PX;height: 200px;
+        border-radius: 50%;
+        height: auto;
+    }
+    .content>.right>.title{
+        font-size:28px;
+        font-weight:bold;
+    }
+}
+.footer{
+
+    font-size: 40px;color:white;
+    font-weight:bold;
+    text-align: center;
+    background-color: #0f2438;
+    padding:10px 0px;/*前面上下單位 後者左右單位*/
+}
+@media(max-width:500px){
+    .footer{
+        font-size:20px;
+    }
+}
