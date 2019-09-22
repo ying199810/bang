@@ -84,7 +84,7 @@
         font-size: 30px;
         text-align: center;
         color: #FFA488;
-        -webkit-text-stroke: 0.3px #FFCC22;
+        -webkit-text-stroke: 0.7px #FFCC22;
         /*text-shadow: 0px 0px 15px #E63F00;/*X軸移動 Y軸移動 暈開效果 光暈顏色*/
         text-shadow: 0 0 20px #fdec84,
                 10px 5px 30px #ffae35,
